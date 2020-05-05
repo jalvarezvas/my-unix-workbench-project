@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # File: guessinggame.sh
 
+echo "Welcome to the Guessing Game of my-unix-workbech-project"
+
 function guessinggame {
 	local number_of_files=$(ls -p | grep -v / | wc -w)
 	local is_correct=1
@@ -33,3 +35,5 @@ function guessinggame {
 		fi
 	done
 }
+
+guessinggame
