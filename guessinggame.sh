@@ -4,7 +4,7 @@
 echo "Welcome to the Guessing Game of my-unix-workbech-project"
 
 function guessinggame {
-	local number_of_files=$(ls -p | grep -v / | wc -w)
+	local number_of_files=$(ls -1bA | wc -l)
 	local is_correct=1
 
 	while [[ $is_correct -eq 1 ]]
